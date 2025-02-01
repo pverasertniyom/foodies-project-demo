@@ -7,7 +7,7 @@ export default function MealItem({ title, slug, image, summary, creator }) {
     <article className={classes.meal}>
       <header>
         <div className={classes.image}>
-          <Image src={image} alt={title} fill sizes="100vw, 100vw"/>
+          <Image src={`${process.env.R2_DOMAIN}/${image}`} alt={title} fill sizes="100vw, 100vw"/>
         </div>
         <div className={classes.headerText}>
           <h2>{title}</h2>
